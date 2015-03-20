@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: MMWD WooCommerce Product Personalisation
- * Plugin URI: http://mcgregormedia.co.uk
+ * Plugin URI: http://mcgregormedia.co.uk/projects/mmwd-woocommerce-product-personalisation/
  * Description: Adds form fields on the frontend product page for personalisation and gift wrap. Adds this data as order item meta data.
  * Version: 1.0.0
  * Author: McGregor Media Web Design
