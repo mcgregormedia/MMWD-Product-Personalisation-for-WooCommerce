@@ -2,6 +2,10 @@
 
 A WordPress plugin for WooCommerce that adds form fields on the frontend product page for text personalisation and gift wrap. The plugin adds this data as order item meta data.
 
+Requirements: Requires WordPress 4.1, WooCommerce 2.3
+
+Compatible up to: WordPress 4.1.1, WooCommerce 2.3.7
+
 Settings available: Offer personalisation, maximum number of characters available, offer gift wrap.
 
 Use: Options will show in Products > Product Data > General.
