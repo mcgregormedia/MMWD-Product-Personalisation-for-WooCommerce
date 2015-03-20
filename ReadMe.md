@@ -14,5 +14,8 @@ Styling: On the frontend, form items are wrapped in separate divs, with class 'm
 
 Changelog
 
+1.0.1 20-03-2015
+FIXED: Illegal string offset warning on 'Max characters' input text box value.
+
 1.0.0 20-03-2015
 Initial release.

@@ -3,7 +3,7 @@
  * Plugin Name: MMWD WooCommerce Product Personalisation
  * Plugin URI: http://mcgregormedia.co.uk/projects/mmwd-woocommerce-product-personalisation/
  * Description: Adds form fields on the frontend product page for personalisation and gift wrap. Adds this data as order item meta data.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: McGregor Media Web Design
  * Author URI: http://mcgregormedia.co.uk
  * Text Domain: mmwd-wc-product-personalisation
@@ -33,8 +33,10 @@ if (  in_array(  'woocommerce/woocommerce.php', apply_filters(  'active_plugins'
 			
 			<div class="options_group">
 				<?php
+				
 				global $post;
 				$mmwd_wc_pp_settings = get_post_meta( $post->ID, '_mmwd_wc_pp_settings', true );
+				
 				woocommerce_wp_checkbox( array( 
 					'id' 				=> '_mmwd_display_personalisation',
 					'label' 			=> __( 'Personalisation', 'mmwd-wc-product-personalisation' ),
@@ -47,7 +49,7 @@ if (  in_array(  'woocommerce/woocommerce.php', apply_filters(  'active_plugins'
 					'id' 				=> '_mmwd_personalisation_max_char',
 					'label' 			=> __( 'Max characters', 'mmwd-wc-product-personalisation' ),
 					'description' 		=> __( 'The maximum number of characters a customer can use for personalisation.', 'mmwd-wc-product-personalisation' ),
-					'value' 			=> esc_html( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ),
+					'value' 			=> isset( $mmwd_wc_pp_settings['mmwd_personalisation_max_char'] ) && $mmwd_wc_pp_settings['mmwd_personalisation_max_char'] ? esc_html( $mmwd_wc_pp_settings['mmwd_personalisation_max_char'] ) : '',
 					'type' 				=> 'number',
 					)
 				);
