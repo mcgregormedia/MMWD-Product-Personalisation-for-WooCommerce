@@ -14,6 +14,9 @@ Styling: On the frontend, form items are wrapped in separate divs, with class 'm
 
 Changelog
 
+1.0.2 23-03-2015
+FIXED: Missing underscore in attribute name for maximum characters text box in product admin.
+
 1.0.1 20-03-2015
 FIXED: Illegal string offset warning on 'Max characters' input text box value.
 

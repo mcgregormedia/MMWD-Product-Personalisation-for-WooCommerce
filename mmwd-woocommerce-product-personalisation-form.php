@@ -19,12 +19,12 @@ class mmwd_product_personalisation_form {
         $mmwd_wc_pp_settings = get_post_meta( $post->ID, '_mmwd_wc_pp_settings', true );
 		
 		if ( isset( $mmwd_wc_pp_settings['_mmwd_display_personalisation'] ) && $mmwd_wc_pp_settings['_mmwd_display_personalisation'] ) {
-			$_mmwd_personalisation_max_char = ( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ) ? ' Maximum number of characters: ' . esc_html( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ) . '.' : '';
+			$_mmwd_personalisation_max_char = ( isset( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ) ) ? ' Maximum number of characters: ' . esc_html( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ) . '.' : '';
 			$_mmwd_personalisation_max_char_attr = ( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ) ? 'maxlength="' . esc_html( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ) . '"' : '';
 			echo '<div class="mmwd_wc_product_meta">
                     <p>Personalisation<br>
                     <input id="_mmwd_personalisation_text" name="_mmwd_personalisation_text" type="text" ' . $_mmwd_personalisation_max_char_attr . '><br>
-					<em>Ensure this text is correct as the seller will personalise your item exactly as it is entered here.' . $_mmwd_personalisation_max_char . '</em></p>
+					<em>Ensure this text is correct as we will personalise your item exactly as it is entered here.' . $_mmwd_personalisation_max_char . '</em></p>
                 </div>';
         }
 		

@@ -3,7 +3,7 @@
  * Plugin Name: MMWD WooCommerce Product Personalisation
  * Plugin URI: http://mcgregormedia.co.uk/projects/mmwd-woocommerce-product-personalisation/
  * Description: Adds form fields on the frontend product page for personalisation and gift wrap. Adds this data as order item meta data.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: McGregor Media Web Design
  * Author URI: http://mcgregormedia.co.uk
  * Text Domain: mmwd-wc-product-personalisation
@@ -41,6 +41,7 @@ if (  in_array(  'woocommerce/woocommerce.php', apply_filters(  'active_plugins'
 					'id' 				=> '_mmwd_display_personalisation',
 					'label' 			=> __( 'Personalisation', 'mmwd-wc-product-personalisation' ),
 					'description'		=> __( 'Tick this box to show a personalisation text box on the product page.', 'mmwd-wc-product-personalisation' ),
+					'desc_tip'			=> true,
 					'value' 			=> isset( $mmwd_wc_pp_settings['_mmwd_display_personalisation'] ) && $mmwd_wc_pp_settings['_mmwd_display_personalisation'] ? '1' : '',
 					'cbvalue' 			=> '1',
 					)
@@ -49,14 +50,17 @@ if (  in_array(  'woocommerce/woocommerce.php', apply_filters(  'active_plugins'
 					'id' 				=> '_mmwd_personalisation_max_char',
 					'label' 			=> __( 'Max characters', 'mmwd-wc-product-personalisation' ),
 					'description' 		=> __( 'The maximum number of characters a customer can use for personalisation.', 'mmwd-wc-product-personalisation' ),
-					'value' 			=> isset( $mmwd_wc_pp_settings['mmwd_personalisation_max_char'] ) && $mmwd_wc_pp_settings['mmwd_personalisation_max_char'] ? esc_html( $mmwd_wc_pp_settings['mmwd_personalisation_max_char'] ) : '',
+					'desc_tip'			=> true,
+					'value' 			=> isset( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ) && $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ? esc_html( $mmwd_wc_pp_settings['_mmwd_personalisation_max_char'] ) : '',
 					'type' 				=> 'number',
 					)
 				);
 				/* woocommerce_wp_text_input( array(
 					'id' 				=> '_mmwd_personalisation_price',
 					'label' 			=> __( 'Personalisation price (' . get_woocommerce_currency_symbol()  . ')', 'mmwd-wc-product-personalisation' ),
+					'desc_tip'			=> true,
 					'description' 		=> __( 'Cost of personalisation. This will increase the product price.', 'mmwd-wc-product-personalisation' ),
+					'desc_tip'			=> true,
 					'value' 			=> esc_html( $mmwd_wc_pp_settings['_mmwd_personalisation_price'] ),
 					'type' 				=> 'text',
 					)
@@ -65,6 +69,7 @@ if (  in_array(  'woocommerce/woocommerce.php', apply_filters(  'active_plugins'
 					'id' 				=> '_mmwd_display_gift_wrap',
 					'label' 			=> __( 'Gift wrap', 'mmwd-wc-product-personalisation' ),
 					'description'		=> __( 'Tick this box to offer a gift wrapping service on the product page.', 'mmwd-wc-product-personalisation' ),
+					'desc_tip'			=> true,
 					'value' 			=> isset( $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ) && $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ? '1' : '',
 					'cbvalue' 			=> '1',
 					)
@@ -73,6 +78,7 @@ if (  in_array(  'woocommerce/woocommerce.php', apply_filters(  'active_plugins'
 					'id' 				=> '_mmwd_gift_wrap_price',
 					'label' 			=> __( 'Gift wrap price (' . get_woocommerce_currency_symbol()  . ')', 'mmwd-wc-product-personalisation' ),
 					'description' 		=> __( 'Cost of gift wrapping. This will increase the product price.', 'mmwd-wc-product-personalisation' ),
+					'desc_tip'			=> true,
 					'value' 			=> esc_html( $mmwd_wc_pp_settings['_mmwd_gift_wrap_price'] ),
 					'type' 				=> 'text',
 					)
