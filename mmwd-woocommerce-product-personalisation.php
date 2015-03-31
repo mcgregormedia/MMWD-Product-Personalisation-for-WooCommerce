@@ -89,7 +89,7 @@ if (  in_array(  'woocommerce/woocommerce.php', apply_filters(  'active_plugins'
         }
 
         /* Update post meta on page update */
-        function mmwd_wc_process_meta_box( $post_id, $post ) {
+        static function mmwd_wc_process_meta_box( $post_id, $post ) {
             global $woocommerce_errors;
 
             if ( isset( $_POST['_mmwd_display_personalisation'] ) || isset( $_POST['_mmwd_display_gift_wrap'] ) || isset( $_POST['_mmwd_gift_wrap_price'] ) ) {
