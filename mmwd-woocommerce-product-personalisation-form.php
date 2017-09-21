@@ -1,5 +1,14 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	
+	exit; // Came directly here? Vamoose.
+	
+}
+
+
+
+
 class mmwd_product_personalisation_form {
 
 

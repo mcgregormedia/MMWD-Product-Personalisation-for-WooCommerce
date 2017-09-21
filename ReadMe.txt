@@ -21,6 +21,9 @@ This plugin is compatible with WooCommerce 3.x versions.
 Install as usual by going to Plugins > Add New and searching for MMWD Product Personalisation for WooCommerce or download the plugin file and upload to your-site.com/wp-content/plugins.
 
 == Changelog ==
+1.1.2 21-09-2017
+ADDED: translation files
+
 1.1.1 20-09-2017
 FIX: PHP undefined index notice in mmwd-woocommerce-product-personalisation-form.php
 

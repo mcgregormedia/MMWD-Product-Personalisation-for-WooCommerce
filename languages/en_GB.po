@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-21 08:58+0100\n"
+"PO-Revision-Date: 2017-09-21 09:00+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_GB\n"
+
+#: mmwd-woocommerce-product-personalisation-form.php:251
+msgid "Personalisation line 1"
+msgstr "Personalisation line 1"
+
+#: mmwd-woocommerce-product-personalisation-form.php:266
+msgid "Personalisation line "
+msgstr "Personalisation line "
+
+#: mmwd-woocommerce-product-personalisation-form.php:285
+#: mmwd-woocommerce-product-personalisation.php:103
+msgid "Gift wrap"
+msgstr "Gift wrap"
+
+#: mmwd-woocommerce-product-personalisation-form.php:286
+msgid "Yes"
+msgstr "Yes"
+
+#: mmwd-woocommerce-product-personalisation.php:65
+msgid "Personalisation"
+msgstr "Personalisation"
+
+#: mmwd-woocommerce-product-personalisation.php:66
+msgid "Tick this box to show a personalisation text box on the product page."
+msgstr ""
+"Tick this box to show a personalisation text box on the product page."
+
+#: mmwd-woocommerce-product-personalisation.php:74
+msgid "Number of rows"
+msgstr "Number of rows"
+
+#: mmwd-woocommerce-product-personalisation.php:75
+msgid ""
+"How many rows can the customer personalise? Requires Personalisation to be "
+"ticked."
+msgstr ""
+"How many rows can the customer personalise? Requires Personalisation to be "
+"ticked."
+
+#: mmwd-woocommerce-product-personalisation.php:78
+msgid "1"
+msgstr "1"
+
+#: mmwd-woocommerce-product-personalisation.php:79
+msgid "2"
+msgstr "2"
+
+#: mmwd-woocommerce-product-personalisation.php:80
+msgid "3"
+msgstr "3"
+
+#: mmwd-woocommerce-product-personalisation.php:81
+msgid "4"
+msgstr "4"
+
+#: mmwd-woocommerce-product-personalisation.php:82
+msgid "5"
+msgstr "5"
+
+#: mmwd-woocommerce-product-personalisation.php:83
+msgid "6"
+msgstr "6"
+
+#: mmwd-woocommerce-product-personalisation.php:84
+msgid "7"
+msgstr "7"
+
+#: mmwd-woocommerce-product-personalisation.php:85
+msgid "8"
+msgstr "8"
+
+#: mmwd-woocommerce-product-personalisation.php:86
+msgid "9"
+msgstr "9"
+
+#: mmwd-woocommerce-product-personalisation.php:87
+msgid "10"
+msgstr "10"
+
+#: mmwd-woocommerce-product-personalisation.php:94
+msgid "Max characters per line"
+msgstr "Max characters per line"
+
+#: mmwd-woocommerce-product-personalisation.php:95
+msgid ""
+"The maximum number of characters per line a customer can use for "
+"personalisation."
+msgstr ""
+"The maximum number of characters per line a customer can use for "
+"personalisation."
+
+#: mmwd-woocommerce-product-personalisation.php:104
+msgid "Tick this box to offer a gift wrapping service on the product page."
+msgstr "Tick this box to offer a gift wrapping service on the product page."
