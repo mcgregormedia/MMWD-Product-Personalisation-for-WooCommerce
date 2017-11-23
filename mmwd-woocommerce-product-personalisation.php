@@ -2,7 +2,7 @@
 /**
  * Plugin Name: MMWD Product Personalisation for WooCommerce
  * Description: Adds form fields on the frontend product page for personalisation and/or gift wrap. Adds this data as order item meta data.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: McGregor Media Web Design
  * Author URI: http://mcgregormedia.co.uk
  * Text Domain: mmwd-wc-product-personalisation
@@ -30,15 +30,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Loads translation files
  * 
- * @since 1.2.0					Added function
+ * @since 1.2.0			Added function 
+ * @since 1.2.1			Changed function name, text domain
  */
 
-function pofwc_load_textdomain() {
+function mmwd_wc_product_personalisation_load_textdomain() {
 	
-	load_plugin_textdomain( 'pofwc', false, dirname( plugin_basename(__FILE__) ) . '/languages/' );
+	load_plugin_textdomain( 'mmwd-wc-product-personalisation', false, dirname( plugin_basename(__FILE__) ) . '/languages/' );
 	
 }
-add_action( 'plugins_loaded', 'pofwc_load_textdomain' );
+add_action( 'plugins_loaded', 'mmwd_wc_product_personalisation_load_textdomain' );
 
 
 
