@@ -21,12 +21,15 @@ This plugin is compatible with WooCommerce 3.x versions.
 Install as usual by going to Plugins > Add New and searching for MMWD Product Personalisation for WooCommerce or download the plugin file and upload to your-site.com/wp-content/plugins.
 
 == Changelog ==
+1.2.2 12-10-2017
+UPDATED: WC requires at least and WC tested up to tags for WooCommerce 3.3.x
+
 1.2.1 23-11-2017
 FIXED: function name conflict with another McGregor Media plugin would cause fatal error on activation
 FIXED: wrong text domain for translation
 
 1.2.0 12-10-2017
-ADDED: WC requires at least and WC tested up to tags fo WooCommerce 3.2+
+ADDED: WC requires at least and WC tested up to tags for WooCommerce 3.2+
 UPDATED: bumped WP tested up to tag
 
 1.1.2 21-09-2017
