@@ -17,11 +17,19 @@ Adds form fields on the frontend product page for personalisation and/or gift wr
 
 This plugin is compatible with WooCommerce 3.x versions.
 
+= GDPR information =
+
+This plugin does not gather or store any personal data.
+
 == Installation ==
 Install as usual by going to Plugins > Add New and searching for MMWD Product Personalisation for WooCommerce or download the plugin file and upload to your-site.com/wp-content/plugins.
 
 == Changelog ==
-1.2.2 12-10-2017
+1.3.0 27-04-2018
+ADDED: GDPR notice in ReadMe
+UPDATED: plugin tags
+
+1.2.2 08-02-2018
 UPDATED: WC requires at least and WC tested up to tags for WooCommerce 3.3.x
 
 1.2.1 23-11-2017
