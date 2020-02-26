@@ -3,7 +3,7 @@ Contributors: mcgregormedia
 Tags: WooCommerce
 Donate link: https://paypal.me/mcgregormedia
 Requires at least: 4.8
-Tested up to: 5.3
+Tested up to: 5.4
 Requires PHP: 7
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@ Adds form fields on the frontend product page for personalisation and/or gift wr
 
 = WooCommerce compatibility =
 
-This plugin is compatible with WooCommerce 3.x versions.
+This plugin is compatible with WooCommerce 3.x and 4.x versions.
 
 = GDPR information =
 
@@ -25,6 +25,10 @@ This plugin does not gather or store any personal data.
 Install as usual by going to Plugins > Add New and searching for MMWD Product Personalisation for WooCommerce or download the plugin file and upload to your-site.com/wp-content/plugins.
 
 == Changelog ==
+1.3.7 26-02-2020
+UPDATED: Tested up to WooCommerce 4.0
+UPDATED: Tested up to WordPress 5.4
+
 1.3.6 24-01-2020
 FIXED: Uninitialized string offset: 0 error in mmwd-woocommerce-product-personalisation.php
 UPDATED: Tested up to WooCommerce 3.9
