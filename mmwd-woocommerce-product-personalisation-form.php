@@ -187,40 +187,46 @@ class mmwd_product_personalisation_form {
 	 *
 	 * @since 1.0.0						Added function
 	 * @since 1.1.0						Added support for multiple lines of personalisation
+	 * @since 1.3.10					Fixed undefined index error on cart and checkout pages
      */
 	
     public function mmwd_wc_get_item_data( $other_data, $cart_item ) {
 		
-        $mmwd_wc_pp_settings = $cart_item['_mmwd_wc_pp_settings'];
-		$_mmwd_display_personalisation_number_of_fields = $mmwd_wc_pp_settings['_mmwd_display_personalisation_number_of_fields'];
-		
-        if ( ( isset( $mmwd_wc_pp_settings['_mmwd_display_personalisation'] ) && $mmwd_wc_pp_settings['_mmwd_display_personalisation'] || ( isset( $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ) && $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ) ) ) {
+        if ( isset( $cart_item['_mmwd_wc_pp_settings'] ) ) { // Check if product has personalisation
 			
-            if ( isset( $cart_item['_mmwd_wc_data'] ) ) {
-
-                $data = $cart_item['_mmwd_wc_data'];
-				$gift_wrap_selected = ( isset( $data['_mmwd_gift_wrap_selected'] ) && $data['_mmwd_gift_wrap_selected'] ) ? 'Yes' : 'No';
-
-                // Add custom data to product data
-                $other_data[] = array( 'name' => 'Personalisation line 1', 'value' => $data['_mmwd_personalisation_text'] );
+			$mmwd_wc_pp_settings = $cart_item['_mmwd_wc_pp_settings'];
+		
+			$_mmwd_display_personalisation_number_of_fields = $mmwd_wc_pp_settings['_mmwd_display_personalisation_number_of_fields'];
+			
+			if ( ( isset( $mmwd_wc_pp_settings['_mmwd_display_personalisation'] ) && $mmwd_wc_pp_settings['_mmwd_display_personalisation'] || ( isset( $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ) && $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ) ) ) {
 				
-				if( $_mmwd_display_personalisation_number_of_fields > 1 ){
+				if ( isset( $cart_item['_mmwd_wc_data'] ) ) {
+
+					$data = $cart_item['_mmwd_wc_data'];
+					$gift_wrap_selected = ( isset( $data['_mmwd_gift_wrap_selected'] ) && $data['_mmwd_gift_wrap_selected'] ) ? 'Yes' : 'No';
+
+					// Add custom data to product data
+					$other_data[] = array( 'name' => 'Personalisation line 1', 'value' => $data['_mmwd_personalisation_text'] );
 					
-					$fields = 2;
-					
-					while ( $fields <= $_mmwd_display_personalisation_number_of_fields ){
+					if( $_mmwd_display_personalisation_number_of_fields > 1 ){
 						
-						$other_data[] = array( 'name' => 'Personalisation line ' . $fields, 'value' => $data['_mmwd_personalisation_text_' . $fields] );
+						$fields = 2;
 						
-						$fields++;
+						while ( $fields <= $_mmwd_display_personalisation_number_of_fields ){
+							
+							$other_data[] = array( 'name' => 'Personalisation line ' . $fields, 'value' => $data['_mmwd_personalisation_text_' . $fields] );
+							
+							$fields++;
+							
+						}
+						
+					}				
+			
+					if ( isset( $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ) && $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ){
+						
+						$other_data[] = array( 'name' => 'Gift wrap', 'value' => $gift_wrap_selected );
 						
 					}
-					
-				}				
-		
-				if ( isset( $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ) && $mmwd_wc_pp_settings['_mmwd_display_gift_wrap'] ){
-					
-					$other_data[] = array( 'name' => 'Gift wrap', 'value' => $gift_wrap_selected );
 					
 				}
 				
