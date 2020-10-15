@@ -25,6 +25,9 @@ This plugin does not gather or store any personal data.
 Install as usual by going to Plugins > Add New and searching for MMWD Product Personalisation for WooCommerce or download the plugin file and upload to your-site.com/wp-content/plugins.
 
 == Changelog ==
+1.3.11 15-10-2020
+UPDATED: compatibility with WooCommerce 4.6.x
+
 1.3.10 08-08-2020
 FIXED: Undefined index error on cart and checkout pages
 UPDATED: Tested up to WordPress 5.5
