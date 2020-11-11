@@ -3,7 +3,7 @@ Contributors: mcgregormedia
 Tags: WooCommerce
 Donate link: https://paypal.me/mcgregormedia
 Requires at least: 4.8
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 7
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,9 @@ This plugin does not gather or store any personal data.
 Install as usual by going to Plugins > Add New and searching for MMWD Product Personalisation for WooCommerce or download the plugin file and upload to your-site.com/wp-content/plugins.
 
 == Changelog ==
+1.3.12 11-11-2020
+UPDATED: compatibility with WooCommerce 4.7
+
 1.3.11 15-10-2020
 UPDATED: compatibility with WooCommerce 4.6.x
 
